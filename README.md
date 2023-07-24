@@ -1,11 +1,11 @@
-About bw_processing
-===================
+About bw_processing-feedstock
+=============================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/bw_processing-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/brightway-lca/bw_processing
 
 Package license: BSD-3-Clause
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/bw_processing-feedstock/blob/main/LICENSE.txt)
 
 Summary: Tools to create structured arrays in a common format
 

@@ -1,13 +1,13 @@
 {% set name = "bw_processing" %}
-{% set version = "0.9" %}
+{% set version = "0.9.1" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('_', '-') }}-{{ version }}.tar.gz
-  sha256: e44878c8577d5690c1a69321c9117b5fd5fe361593f69460607517bcb4848be2
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: 2cf3c4baad159d5a6bc287d7065599d5daf28d4846178399f0ae6b2aa08a64b1
 
 build:
   noarch: python

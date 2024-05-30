@@ -35,7 +35,8 @@ test:
     - pip
 
 about:
-  summary: Foo
+  home: https://github.com/brightway-lca/bw_processing
+  summary: Tools to create structured arrays in a common format
   license: BSD-3-Clause
   license_family: BSD
   license_file:

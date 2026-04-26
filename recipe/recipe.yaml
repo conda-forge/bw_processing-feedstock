@@ -1,0 +1,51 @@
+schema_version: 1
+
+context:
+  name: bw_processing
+  version: "1.0"
+
+package:
+  name: ${{ name|lower }}
+  version: ${{ version }}
+
+source:
+  url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/bw_processing-${{ version }}.tar.gz
+  sha256: 225b7afbe5d29c0815d49ce41829c1d5aa05edb6e9d16cdd0fe9cdefba05041e
+
+build:
+  number: 2
+  noarch: python
+  script: ${{ PYTHON }} -m pip install . -vv
+
+requirements:
+  host:
+    - python ${{ python_min }}.*
+    - setuptools >=68.0
+    - pip
+  run:
+    - python >=${{ python_min }}
+    - fsspec
+    - morefs
+    - numpy
+    - pandas
+
+tests:
+  - python:
+      imports:
+        - bw_processing
+      pip_check: true
+      python_version: ${{ python_min }}
+
+about:
+  summary: Tools to create structured arrays in a common format
+  license: BSD-3-Clause
+  license_file:
+    - LICENSE
+  homepage: https://github.com/brightway-lca/bw_processing
+  repository: https://github.com/brightway-lca/bw_processing
+  documentation: https://3.docs.brightwaylca.org/
+
+extra:
+  recipe-maintainers:
+    - cmutel
+    - xylar

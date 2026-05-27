@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: bw_processing
-  version: "1.1.1"
+  version: "1.2"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/bw_processing-${{ version }}.tar.gz
-  sha256: cf30793fe5aaf8d12b425345bf50d652cda32b73b52c79a6b90af3d8e77fbdc6
+  sha256: dffb201a5d77bfd3a8906f554acec7f78cb2c9734f02121bc94694b6ccc18166
 
 build:
   number: 0

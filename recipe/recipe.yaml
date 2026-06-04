@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: bw_processing
-  version: "1.3"
+  version: '1.5'
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/bw_processing-${{ version }}.tar.gz
-  sha256: 10934ba6d651f822441e4f6dcb5227b3be9fd8051b95d8b258eeca5121abfd5f
+  sha256: 4519ae47926c36087e3494fa3b987a8ca29b313e6625633d652f9d114c07daab
 
 build:
   number: 0
@@ -28,7 +28,7 @@ requirements:
     - morefs
     - numpy
     - pandas
-
+    - jsonschema >=4.0
 tests:
   - python:
       imports:
